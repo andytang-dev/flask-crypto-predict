@@ -6,7 +6,7 @@ releases:
 - name: aasd4016-predict
   namespace: mldemo
   chart: andytang/application
-  version: 0.1.5
+  version: 0.1.6
   values:
   - deployment:
       name: flask-crypto-predict
@@ -19,5 +19,4 @@ releases:
     ingress:
       hostname: aasd4016.ml-demo.lol
       tlsSecretName: wildcard-ml-demo-lol-cert
-      path: /
-      pathType: Prefix
+      path: /model
